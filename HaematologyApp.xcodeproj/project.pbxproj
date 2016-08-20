@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		19EBC4631D688CC7003C7C43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4621D688CC7003C7C43 /* main.m */; };
 		19EBC4661D688CC8003C7C43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4651D688CC8003C7C43 /* AppDelegate.m */; };
-		19EBC4691D688CC8003C7C43 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4681D688CC8003C7C43 /* FirstViewController.m */; };
-		19EBC46C1D688CC8003C7C43 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC46B1D688CC8003C7C43 /* SecondViewController.m */; };
 		19EBC46F1D688CC8003C7C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EBC46D1D688CC8003C7C43 /* Main.storyboard */; };
 		19EBC4711D688CC8003C7C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBC4701D688CC8003C7C43 /* Assets.xcassets */; };
 		19EBC4741D688CC8003C7C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EBC4721D688CC8003C7C43 /* LaunchScreen.storyboard */; };
+		19EBC47D1D688E73003C7C43 /* redCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC47C1D688E73003C7C43 /* redCellsViewController.m */; };
+		19EBC4811D688EB8003C7C43 /* whiteCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4801D688EB8003C7C43 /* whiteCellsViewController.m */; };
+		19EBC4841D688ED3003C7C43 /* malariaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4831D688ED3003C7C43 /* malariaViewController.m */; };
+		19EBC4871D688EE6003C7C43 /* parasiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4861D688EE6003C7C43 /* parasiteViewController.m */; };
+		19EBC48B1D689520003C7C43 /* newsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC48A1D689520003C7C43 /* newsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,20 @@
 		19EBC4621D688CC7003C7C43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19EBC4641D688CC7003C7C43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19EBC4651D688CC8003C7C43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		19EBC4671D688CC8003C7C43 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		19EBC4681D688CC8003C7C43 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		19EBC46A1D688CC8003C7C43 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		19EBC46B1D688CC8003C7C43 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		19EBC46E1D688CC8003C7C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19EBC4701D688CC8003C7C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19EBC4731D688CC8003C7C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19EBC4751D688CC8003C7C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EBC47B1D688E73003C7C43 /* redCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redCellsViewController.h; sourceTree = "<group>"; };
+		19EBC47C1D688E73003C7C43 /* redCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = redCellsViewController.m; sourceTree = "<group>"; };
+		19EBC47F1D688EB8003C7C43 /* whiteCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whiteCellsViewController.h; sourceTree = "<group>"; };
+		19EBC4801D688EB8003C7C43 /* whiteCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = whiteCellsViewController.m; sourceTree = "<group>"; };
+		19EBC4821D688ED3003C7C43 /* malariaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = malariaViewController.h; sourceTree = "<group>"; };
+		19EBC4831D688ED3003C7C43 /* malariaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = malariaViewController.m; sourceTree = "<group>"; };
+		19EBC4851D688EE6003C7C43 /* parasiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parasiteViewController.h; sourceTree = "<group>"; };
+		19EBC4861D688EE6003C7C43 /* parasiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parasiteViewController.m; sourceTree = "<group>"; };
+		19EBC4891D689520003C7C43 /* newsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsViewController.h; sourceTree = "<group>"; };
+		19EBC48A1D689520003C7C43 /* newsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,8 @@
 		19EBC4551D688CC7003C7C43 = {
 			isa = PBXGroup;
 			children = (
+				19EBC4881D689391003C7C43 /* Art */,
+				19EBC47E1D688E9C003C7C43 /* Classes */,
 				19EBC4601D688CC7003C7C43 /* HaematologyApp */,
 				19EBC45F1D688CC7003C7C43 /* Products */,
 			);
@@ -63,10 +74,6 @@
 			children = (
 				19EBC4641D688CC7003C7C43 /* AppDelegate.h */,
 				19EBC4651D688CC8003C7C43 /* AppDelegate.m */,
-				19EBC4671D688CC8003C7C43 /* FirstViewController.h */,
-				19EBC4681D688CC8003C7C43 /* FirstViewController.m */,
-				19EBC46A1D688CC8003C7C43 /* SecondViewController.h */,
-				19EBC46B1D688CC8003C7C43 /* SecondViewController.m */,
 				19EBC46D1D688CC8003C7C43 /* Main.storyboard */,
 				19EBC4701D688CC8003C7C43 /* Assets.xcassets */,
 				19EBC4721D688CC8003C7C43 /* LaunchScreen.storyboard */,
@@ -82,6 +89,30 @@
 				19EBC4621D688CC7003C7C43 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19EBC47E1D688E9C003C7C43 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				19EBC47B1D688E73003C7C43 /* redCellsViewController.h */,
+				19EBC47C1D688E73003C7C43 /* redCellsViewController.m */,
+				19EBC47F1D688EB8003C7C43 /* whiteCellsViewController.h */,
+				19EBC4801D688EB8003C7C43 /* whiteCellsViewController.m */,
+				19EBC4821D688ED3003C7C43 /* malariaViewController.h */,
+				19EBC4831D688ED3003C7C43 /* malariaViewController.m */,
+				19EBC4851D688EE6003C7C43 /* parasiteViewController.h */,
+				19EBC4861D688EE6003C7C43 /* parasiteViewController.m */,
+				19EBC4891D689520003C7C43 /* newsViewController.h */,
+				19EBC48A1D689520003C7C43 /* newsViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19EBC4881D689391003C7C43 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Art;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19EBC46C1D688CC8003C7C43 /* SecondViewController.m in Sources */,
+				19EBC4811D688EB8003C7C43 /* whiteCellsViewController.m in Sources */,
+				19EBC4841D688ED3003C7C43 /* malariaViewController.m in Sources */,
+				19EBC48B1D689520003C7C43 /* newsViewController.m in Sources */,
+				19EBC47D1D688E73003C7C43 /* redCellsViewController.m in Sources */,
 				19EBC4661D688CC8003C7C43 /* AppDelegate.m in Sources */,
-				19EBC4691D688CC8003C7C43 /* FirstViewController.m in Sources */,
 				19EBC4631D688CC7003C7C43 /* main.m in Sources */,
+				19EBC4871D688EE6003C7C43 /* parasiteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
