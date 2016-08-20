@@ -49,10 +49,19 @@
                                     <navigationItem title="Red blood cell abnormalities" id="v3P-JP-rdu"/>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-5q-un1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YQM-5q-un1" firstAttribute="bottom" secondItem="xXb-Y5-pns" secondAttribute="top" id="14o-sp-4tX"/>
                             <constraint firstItem="5vY-iw-vmV" firstAttribute="centerX" secondItem="amb-vA-XCd" secondAttribute="centerX" id="1Uk-YG-zEp"/>
+                            <constraint firstItem="YQM-5q-un1" firstAttribute="top" secondItem="5vY-iw-vmV" secondAttribute="bottom" id="3Gh-Lt-8jn"/>
+                            <constraint firstItem="YQM-5q-un1" firstAttribute="leading" secondItem="5vY-iw-vmV" secondAttribute="leading" id="LJT-Fc-lVd"/>
+                            <constraint firstItem="YQM-5q-un1" firstAttribute="trailing" secondItem="5vY-iw-vmV" secondAttribute="trailing" id="ZLV-q6-tm4"/>
                             <constraint firstItem="5vY-iw-vmV" firstAttribute="top" secondItem="IqI-zG-jNL" secondAttribute="bottom" id="Zfj-eM-Pcg"/>
                             <constraint firstItem="5vY-iw-vmV" firstAttribute="leading" secondItem="amb-vA-XCd" secondAttribute="leading" id="wbv-Ke-E56"/>
                         </constraints>

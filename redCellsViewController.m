@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.58 green:0.07 blue:0.00 alpha:1.0]];
+        // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
