@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface newsViewController : UIViewController
+@interface newsViewController : UIViewController {
+    
+    IBOutlet UIActivityIndicatorView *activityIndicator;
+    NSTimer *timer;
+}
 
 @end
