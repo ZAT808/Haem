@@ -39,8 +39,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-GU-gSa">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-5q-un1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vY-iw-vmV">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="83E-pz-mWC"/>
+                                </constraints>
                                 <color key="barTintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,33 +62,23 @@
                                     <navigationItem title="Red blood cell abnormalities" id="v3P-JP-rdu"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-5q-un1">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YQM-5q-un1" firstAttribute="bottom" secondItem="xXb-Y5-pns" secondAttribute="top" id="14o-sp-4tX"/>
-                            <constraint firstItem="5vY-iw-vmV" firstAttribute="centerX" secondItem="amb-vA-XCd" secondAttribute="centerX" id="1Uk-YG-zEp"/>
-                            <constraint firstItem="YQM-5q-un1" firstAttribute="top" secondItem="5vY-iw-vmV" secondAttribute="bottom" id="3Gh-Lt-8jn"/>
-                            <constraint firstItem="YQM-5q-un1" firstAttribute="leading" secondItem="5vY-iw-vmV" secondAttribute="leading" id="LJT-Fc-lVd"/>
-                            <constraint firstItem="YQM-5q-un1" firstAttribute="trailing" secondItem="5vY-iw-vmV" secondAttribute="trailing" id="ZLV-q6-tm4"/>
-                            <constraint firstItem="5vY-iw-vmV" firstAttribute="top" secondItem="IqI-zG-jNL" secondAttribute="bottom" id="Zfj-eM-Pcg"/>
-                            <constraint firstItem="5vY-iw-vmV" firstAttribute="leading" secondItem="amb-vA-XCd" secondAttribute="leading" id="wbv-Ke-E56"/>
+                            <constraint firstItem="YQM-5q-un1" firstAttribute="trailing" secondItem="VP4-GU-gSa" secondAttribute="trailing" id="35h-hN-tZJ"/>
+                            <constraint firstItem="5vY-iw-vmV" firstAttribute="trailing" secondItem="YQM-5q-un1" secondAttribute="trailing" id="6bk-b6-wpb"/>
+                            <constraint firstItem="VP4-GU-gSa" firstAttribute="bottom" secondItem="xXb-Y5-pns" secondAttribute="top" id="BG6-zg-FUE"/>
+                            <constraint firstItem="5vY-iw-vmV" firstAttribute="leading" secondItem="YQM-5q-un1" secondAttribute="leading" id="DtP-vs-yNP"/>
+                            <constraint firstItem="VP4-GU-gSa" firstAttribute="top" secondItem="YQM-5q-un1" secondAttribute="top" id="L3S-KK-vjh"/>
+                            <constraint firstAttribute="trailing" secondItem="5vY-iw-vmV" secondAttribute="trailing" id="ePj-6z-P04"/>
+                            <constraint firstItem="VP4-GU-gSa" firstAttribute="top" secondItem="5vY-iw-vmV" secondAttribute="bottom" id="jqg-oP-91L"/>
+                            <constraint firstItem="5vY-iw-vmV" firstAttribute="leading" secondItem="amb-vA-XCd" secondAttribute="leading" id="kk6-Uc-phe"/>
+                            <constraint firstItem="YQM-5q-un1" firstAttribute="bottom" secondItem="xXb-Y5-pns" secondAttribute="top" id="mYj-2B-6tG"/>
+                            <constraint firstItem="VP4-GU-gSa" firstAttribute="leading" secondItem="YQM-5q-un1" secondAttribute="leading" id="mvk-Y0-3Mi"/>
+                            <constraint firstItem="5vY-iw-vmV" firstAttribute="top" secondItem="IqI-zG-jNL" secondAttribute="bottom" id="o2D-xU-Zqz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Red Cells" image="red" id="1ga-7C-oxd">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
-                                <color key="value" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Red Cells" image="red" id="1ga-7C-oxd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxx-wj-M2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,6 +197,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bloodBackground" width="320" height="640"/>
         <image name="mosquito" width="25" height="25"/>
         <image name="news" width="25" height="22"/>
         <image name="red" width="25" height="25"/>
