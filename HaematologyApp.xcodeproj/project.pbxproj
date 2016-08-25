@@ -17,6 +17,26 @@
 		19EBC4841D688ED3003C7C43 /* malariaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4831D688ED3003C7C43 /* malariaViewController.m */; };
 		19EBC4871D688EE6003C7C43 /* parasiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC4861D688EE6003C7C43 /* parasiteViewController.m */; };
 		19EBC48B1D689520003C7C43 /* newsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EBC48A1D689520003C7C43 /* newsViewController.m */; };
+		19EF74241D6E65E700D7BB37 /* Exo2-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF73FF1D6E65E700D7BB37 /* Exo2-Black.ttf */; };
+		19EF74251D6E65E700D7BB37 /* Exo2-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74001D6E65E700D7BB37 /* Exo2-BlackItalic.ttf */; };
+		19EF74261D6E65E700D7BB37 /* Exo2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74011D6E65E700D7BB37 /* Exo2-Bold.ttf */; };
+		19EF74271D6E65E700D7BB37 /* Exo2-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74021D6E65E700D7BB37 /* Exo2-BoldItalic.ttf */; };
+		19EF74281D6E65E700D7BB37 /* Exo2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74031D6E65E700D7BB37 /* Exo2-ExtraBold.ttf */; };
+		19EF74291D6E65E700D7BB37 /* Exo2-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74041D6E65E700D7BB37 /* Exo2-ExtraBoldItalic.ttf */; };
+		19EF742A1D6E65E700D7BB37 /* Exo2-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74051D6E65E700D7BB37 /* Exo2-ExtraLight.ttf */; };
+		19EF742B1D6E65E700D7BB37 /* Exo2-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74061D6E65E700D7BB37 /* Exo2-ExtraLightItalic.ttf */; };
+		19EF742C1D6E65E700D7BB37 /* Exo2-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74071D6E65E700D7BB37 /* Exo2-Italic.ttf */; };
+		19EF742D1D6E65E700D7BB37 /* Exo2-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74081D6E65E700D7BB37 /* Exo2-Light.ttf */; };
+		19EF742E1D6E65E700D7BB37 /* Exo2-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74091D6E65E700D7BB37 /* Exo2-LightItalic.ttf */; };
+		19EF742F1D6E65E700D7BB37 /* Exo2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF740A1D6E65E700D7BB37 /* Exo2-Medium.ttf */; };
+		19EF74301D6E65E700D7BB37 /* Exo2-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF740B1D6E65E700D7BB37 /* Exo2-MediumItalic.ttf */; };
+		19EF74311D6E65E700D7BB37 /* Exo2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF740C1D6E65E700D7BB37 /* Exo2-Regular.ttf */; };
+		19EF74321D6E65E700D7BB37 /* Exo2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF740D1D6E65E700D7BB37 /* Exo2-SemiBold.ttf */; };
+		19EF74331D6E65E700D7BB37 /* Exo2-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF740E1D6E65E700D7BB37 /* Exo2-SemiBoldItalic.ttf */; };
+		19EF74341D6E65E700D7BB37 /* Exo2-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF740F1D6E65E700D7BB37 /* Exo2-Thin.ttf */; };
+		19EF74351D6E65E700D7BB37 /* Exo2-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74101D6E65E700D7BB37 /* Exo2-ThinItalic.ttf */; };
+		19EF74361D6E65E700D7BB37 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74111D6E65E700D7BB37 /* OFL.txt */; };
+		19EF744B1D6E7D4E00D7BB37 /* firstScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF744A1D6E7D4E00D7BB37 /* firstScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +58,27 @@
 		19EBC4861D688EE6003C7C43 /* parasiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parasiteViewController.m; sourceTree = "<group>"; };
 		19EBC4891D689520003C7C43 /* newsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsViewController.h; sourceTree = "<group>"; };
 		19EBC48A1D689520003C7C43 /* newsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsViewController.m; sourceTree = "<group>"; };
+		19EF73FF1D6E65E700D7BB37 /* Exo2-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Black.ttf"; sourceTree = "<group>"; };
+		19EF74001D6E65E700D7BB37 /* Exo2-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BlackItalic.ttf"; sourceTree = "<group>"; };
+		19EF74011D6E65E700D7BB37 /* Exo2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Bold.ttf"; sourceTree = "<group>"; };
+		19EF74021D6E65E700D7BB37 /* Exo2-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BoldItalic.ttf"; sourceTree = "<group>"; };
+		19EF74031D6E65E700D7BB37 /* Exo2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBold.ttf"; sourceTree = "<group>"; };
+		19EF74041D6E65E700D7BB37 /* Exo2-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		19EF74051D6E65E700D7BB37 /* Exo2-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLight.ttf"; sourceTree = "<group>"; };
+		19EF74061D6E65E700D7BB37 /* Exo2-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		19EF74071D6E65E700D7BB37 /* Exo2-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Italic.ttf"; sourceTree = "<group>"; };
+		19EF74081D6E65E700D7BB37 /* Exo2-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Light.ttf"; sourceTree = "<group>"; };
+		19EF74091D6E65E700D7BB37 /* Exo2-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-LightItalic.ttf"; sourceTree = "<group>"; };
+		19EF740A1D6E65E700D7BB37 /* Exo2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Medium.ttf"; sourceTree = "<group>"; };
+		19EF740B1D6E65E700D7BB37 /* Exo2-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-MediumItalic.ttf"; sourceTree = "<group>"; };
+		19EF740C1D6E65E700D7BB37 /* Exo2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.ttf"; sourceTree = "<group>"; };
+		19EF740D1D6E65E700D7BB37 /* Exo2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBold.ttf"; sourceTree = "<group>"; };
+		19EF740E1D6E65E700D7BB37 /* Exo2-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		19EF740F1D6E65E700D7BB37 /* Exo2-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Thin.ttf"; sourceTree = "<group>"; };
+		19EF74101D6E65E700D7BB37 /* Exo2-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ThinItalic.ttf"; sourceTree = "<group>"; };
+		19EF74111D6E65E700D7BB37 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		19EF74491D6E7D4E00D7BB37 /* firstScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstScreen.h; path = HaematologyApp/firstScreen.h; sourceTree = "<group>"; };
+		19EF744A1D6E7D4E00D7BB37 /* firstScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstScreen.m; path = HaematologyApp/firstScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +95,7 @@
 		19EBC4551D688CC7003C7C43 = {
 			isa = PBXGroup;
 			children = (
+				19EF73F91D6E62D100D7BB37 /* Font */,
 				19EBC4881D689391003C7C43 /* Art */,
 				19EBC47E1D688E9C003C7C43 /* Classes */,
 				19EBC4601D688CC7003C7C43 /* HaematologyApp */,
@@ -94,6 +136,8 @@
 		19EBC47E1D688E9C003C7C43 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				19EF74491D6E7D4E00D7BB37 /* firstScreen.h */,
+				19EF744A1D6E7D4E00D7BB37 /* firstScreen.m */,
 				19EBC47B1D688E73003C7C43 /* redCellsViewController.h */,
 				19EBC47C1D688E73003C7C43 /* redCellsViewController.m */,
 				19EBC47F1D688EB8003C7C43 /* whiteCellsViewController.h */,
@@ -113,6 +157,40 @@
 			children = (
 			);
 			name = Art;
+			sourceTree = "<group>";
+		};
+		19EF73F91D6E62D100D7BB37 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				19EF73FE1D6E65E700D7BB37 /* Exo_2 */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		19EF73FE1D6E65E700D7BB37 /* Exo_2 */ = {
+			isa = PBXGroup;
+			children = (
+				19EF73FF1D6E65E700D7BB37 /* Exo2-Black.ttf */,
+				19EF74001D6E65E700D7BB37 /* Exo2-BlackItalic.ttf */,
+				19EF74011D6E65E700D7BB37 /* Exo2-Bold.ttf */,
+				19EF74021D6E65E700D7BB37 /* Exo2-BoldItalic.ttf */,
+				19EF74031D6E65E700D7BB37 /* Exo2-ExtraBold.ttf */,
+				19EF74041D6E65E700D7BB37 /* Exo2-ExtraBoldItalic.ttf */,
+				19EF74051D6E65E700D7BB37 /* Exo2-ExtraLight.ttf */,
+				19EF74061D6E65E700D7BB37 /* Exo2-ExtraLightItalic.ttf */,
+				19EF74071D6E65E700D7BB37 /* Exo2-Italic.ttf */,
+				19EF74081D6E65E700D7BB37 /* Exo2-Light.ttf */,
+				19EF74091D6E65E700D7BB37 /* Exo2-LightItalic.ttf */,
+				19EF740A1D6E65E700D7BB37 /* Exo2-Medium.ttf */,
+				19EF740B1D6E65E700D7BB37 /* Exo2-MediumItalic.ttf */,
+				19EF740C1D6E65E700D7BB37 /* Exo2-Regular.ttf */,
+				19EF740D1D6E65E700D7BB37 /* Exo2-SemiBold.ttf */,
+				19EF740E1D6E65E700D7BB37 /* Exo2-SemiBoldItalic.ttf */,
+				19EF740F1D6E65E700D7BB37 /* Exo2-Thin.ttf */,
+				19EF74101D6E65E700D7BB37 /* Exo2-ThinItalic.ttf */,
+				19EF74111D6E65E700D7BB37 /* OFL.txt */,
+			);
+			path = Exo_2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +253,26 @@
 			files = (
 				19EBC4741D688CC8003C7C43 /* LaunchScreen.storyboard in Resources */,
 				19EBC4711D688CC8003C7C43 /* Assets.xcassets in Resources */,
+				19EF74311D6E65E700D7BB37 /* Exo2-Regular.ttf in Resources */,
+				19EF742B1D6E65E700D7BB37 /* Exo2-ExtraLightItalic.ttf in Resources */,
+				19EF74301D6E65E700D7BB37 /* Exo2-MediumItalic.ttf in Resources */,
+				19EF74321D6E65E700D7BB37 /* Exo2-SemiBold.ttf in Resources */,
+				19EF742A1D6E65E700D7BB37 /* Exo2-ExtraLight.ttf in Resources */,
+				19EF74251D6E65E700D7BB37 /* Exo2-BlackItalic.ttf in Resources */,
+				19EF74351D6E65E700D7BB37 /* Exo2-ThinItalic.ttf in Resources */,
+				19EF74261D6E65E700D7BB37 /* Exo2-Bold.ttf in Resources */,
+				19EF74241D6E65E700D7BB37 /* Exo2-Black.ttf in Resources */,
+				19EF74271D6E65E700D7BB37 /* Exo2-BoldItalic.ttf in Resources */,
+				19EF74361D6E65E700D7BB37 /* OFL.txt in Resources */,
+				19EF742D1D6E65E700D7BB37 /* Exo2-Light.ttf in Resources */,
+				19EF742E1D6E65E700D7BB37 /* Exo2-LightItalic.ttf in Resources */,
+				19EF742C1D6E65E700D7BB37 /* Exo2-Italic.ttf in Resources */,
+				19EF74281D6E65E700D7BB37 /* Exo2-ExtraBold.ttf in Resources */,
+				19EF74341D6E65E700D7BB37 /* Exo2-Thin.ttf in Resources */,
 				19EBC46F1D688CC8003C7C43 /* Main.storyboard in Resources */,
+				19EF74331D6E65E700D7BB37 /* Exo2-SemiBoldItalic.ttf in Resources */,
+				19EF742F1D6E65E700D7BB37 /* Exo2-Medium.ttf in Resources */,
+				19EF74291D6E65E700D7BB37 /* Exo2-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19EF744B1D6E7D4E00D7BB37 /* firstScreen.m in Sources */,
 				19EBC4811D688EB8003C7C43 /* whiteCellsViewController.m in Sources */,
 				19EBC4841D688ED3003C7C43 /* malariaViewController.m in Sources */,
 				19EBC48B1D689520003C7C43 /* newsViewController.m in Sources */,
@@ -345,6 +443,7 @@
 				19EBC47A1D688CC8003C7C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,10 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rxa-ua-fNC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Exo2-ExtraBold.ttf">
+            <string>Exo2-ExtraBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--First Screen-->
+        <scene sceneID="7CM-o7-ahZ">
+            <objects>
+                <viewController id="Rxa-ua-fNC" customClass="firstScreen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G9V-Yi-a7N"/>
+                        <viewControllerLayoutGuide type="bottom" id="DhU-gp-5sc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DQK-pA-oEd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksx-yu-1BF">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Exo2-ExtraBold" family="Exo 2" pointSize="24"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Blood Cell Gallery Homepage" id="1KM-QL-JeZ"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R7t-od-EBM">
+                                <rect key="frame" x="10" y="80" width="580" height="173"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Qf4-C4-XaG"/>
+                                </constraints>
+                                <string key="text">Welcome to the Peripheral Blood Gallery, a collaboration between Manchester Metropolitan University, The World Health Organization and the United Kingdom National External Quality Assessment Scheme for General Haematology (UKNEQAS (H))
+
+The peripheral blood gallery covers mainly red blood cell abnormalities, but also covers the various appearances of white blood cells and platelets.
+
+The process of examination of the blood film is described, along with how a blood film is made and stained.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2W-Wz-dKk">
+                                <rect key="frame" x="111" y="513" width="377" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="pvq-oA-ewZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Exo2-ExtraBold" family="Exo 2" pointSize="30"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="presentation" modalTransitionStyle="flipHorizontal" id="JfC-gd-ix4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ksx-yu-1BF" firstAttribute="leading" secondItem="DQK-pA-oEd" secondAttribute="leading" id="EBr-HB-ya4"/>
+                            <constraint firstAttribute="bottom" secondItem="z2W-Wz-dKk" secondAttribute="bottom" constant="20" symbolic="YES" id="RiU-20-UsG"/>
+                            <constraint firstItem="R7t-od-EBM" firstAttribute="centerX" secondItem="Ksx-yu-1BF" secondAttribute="centerX" id="Xzi-GJ-eIK"/>
+                            <constraint firstItem="R7t-od-EBM" firstAttribute="leading" secondItem="DQK-pA-oEd" secondAttribute="leadingMargin" constant="-10" id="ck5-Bz-pwV"/>
+                            <constraint firstItem="R7t-od-EBM" firstAttribute="top" secondItem="Ksx-yu-1BF" secondAttribute="bottom" constant="16" id="dnE-M3-oUc"/>
+                            <constraint firstItem="z2W-Wz-dKk" firstAttribute="leading" secondItem="DQK-pA-oEd" secondAttribute="leadingMargin" constant="91" id="j2o-xC-P1h"/>
+                            <constraint firstItem="R7t-od-EBM" firstAttribute="top" secondItem="DQK-pA-oEd" secondAttribute="top" constant="80" id="kc9-Wu-nLd"/>
+                            <constraint firstItem="R7t-od-EBM" firstAttribute="centerX" secondItem="DQK-pA-oEd" secondAttribute="centerX" id="vpo-6N-GOI"/>
+                            <constraint firstItem="R7t-od-EBM" firstAttribute="centerX" secondItem="z2W-Wz-dKk" secondAttribute="centerX" id="zeY-gN-VLd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeText" destination="R7t-od-EBM" id="vFW-oE-Fi9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzX-4N-d2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-1407"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -39,23 +118,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-GU-gSa">
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-GU-gSa">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-5q-un1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-5q-un1">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="caj-5s-j1c" id="v3v-qb-nGU"/>
+                                    <outlet property="delegate" destination="caj-5s-j1c" id="Lrb-bu-ZbT"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vY-iw-vmV">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="83E-pz-mWC"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Exo2-ExtraBold" family="Exo 2" pointSize="24"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
@@ -98,6 +182,9 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zi0-7j-gfs">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Exo2-ExtraBold" family="Exo 2" pointSize="24"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="White blood cell abnormalities" id="fWh-Hh-fLL"/>
                                 </items>

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface redCellsViewController : UIViewController
+@interface redCellsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

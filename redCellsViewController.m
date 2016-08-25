@@ -13,13 +13,56 @@
 @end
 
 @implementation redCellsViewController
+{
+    NSArray *tableData;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.498 green:0.0 blue:0.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSFontAttributeName: [UIFont fontWithName:@"Exo2-ExtraBold" size:18.0f],
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.51 green:0.11 blue:0.10 alpha:1.0]];
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.498 green:0.0 blue:0.0 alpha:1.0
+                                            ]];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Exo2-ExtraBold" size:12.0f]} forState:UIControlStateNormal];
         // Do any additional setup after loading the view.
+    
+    tableData = [NSArray arrayWithObjects:@"Acanthocyte", @"Anisocytosis", @"Basophilic stippling", @"Echinocytes", @"Elliptocytes", @"Hemi-ghost cells", @"Howell-Jolly bodies", @"Hypochromasia", @"Keratocytes", @"Macrocytes", @"Microcytes", nil];
+    
+   
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [tableData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+
+    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+    UIView *bgColorView = [[UIView alloc] init];
+    bgColorView.backgroundColor = [UIColor colorWithRed:0.498 green:0.0 blue:0.0 alpha:1.0];
+    [cell setSelectedBackgroundView:bgColorView];
+    
+    cell.textLabel.highlightedTextColor = [UIColor whiteColor];
+    cell.separatorInset = UIEdgeInsetsZero;
+    cell.preservesSuperviewLayoutMargins = false;
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"Exo2-Regular" size:14.0f];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
