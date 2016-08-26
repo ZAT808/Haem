@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //load the page into the newsWebView outlet
-    NSURL* news = [[NSURL alloc] initWithString:@"http://www.google.co.uk"];
+    NSURL* news = [[NSURL alloc] initWithString:@"http://www.rpd-online.co.uk/haem/latestNews.php"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:news];
     [_newsWebView loadRequest:urlRequest];
     

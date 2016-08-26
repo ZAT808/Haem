@@ -7,6 +7,7 @@
 //
 
 #import "redCellsViewController.h"
+#import "customCell.h"
 
 @interface redCellsViewController ()
 
@@ -36,38 +37,52 @@
     
    
 }
-
+//========== TELL TABLE VIEW HOW MANY ROWS TO MAKE =====================================================
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [tableData count];
 }
-
+//========== CREATE EACH ROW IN THE TABLE USING THE CUSTOM CELL ========================================
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    static NSString *simpleTableIdentifier = @"customCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    customCell *cell = (customCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"customCell" owner:self options:nil];
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [nib objectAtIndex:0];
+        
+        CALayer *cellImageLayer = cell.thumbnailImageView.layer;
+        [cellImageLayer setCornerRadius:9.0f];
+        [cellImageLayer setMasksToBounds:YES];
+        [cellImageLayer setBorderWidth:2.0f];
+        [cellImageLayer setBorderColor:[[UIColor whiteColor] CGColor]];
+        
     }
 
     cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     UIView *bgColorView = [[UIView alloc] init];
     bgColorView.backgroundColor = [UIColor colorWithRed:0.498 green:0.0 blue:0.0 alpha:1.0];
     [cell setSelectedBackgroundView:bgColorView];
-    
     cell.textLabel.highlightedTextColor = [UIColor whiteColor];
+    
     cell.separatorInset = UIEdgeInsetsZero;
     cell.preservesSuperviewLayoutMargins = false;
     cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont fontWithName:@"Exo2-Regular" size:14.0f];
+    cell.thumbnailImageView.image = [UIImage imageNamed:@"cellTest.png"];
+    cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
+    //cell.nameLabel.font = [UIFont fontWithName:@"Exo2-Regular" size:14.0f];
     return cell;
 }
-
+//=====================================================================================================
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 78;
 }
 
 /*

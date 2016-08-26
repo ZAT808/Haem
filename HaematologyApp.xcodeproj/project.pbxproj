@@ -37,6 +37,9 @@
 		19EF74351D6E65E700D7BB37 /* Exo2-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74101D6E65E700D7BB37 /* Exo2-ThinItalic.ttf */; };
 		19EF74361D6E65E700D7BB37 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74111D6E65E700D7BB37 /* OFL.txt */; };
 		19EF744B1D6E7D4E00D7BB37 /* firstScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF744A1D6E7D4E00D7BB37 /* firstScreen.m */; };
+		19EF744D1D6ECA3800D7BB37 /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EF744C1D6ECA3800D7BB37 /* customCell.xib */; };
+		19EF74501D6ECB9300D7BB37 /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF744F1D6ECB9300D7BB37 /* customCell.m */; };
+		19EF74551D6ED4A700D7BB37 /* cellTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 19EF74541D6ED4A700D7BB37 /* cellTest.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +82,10 @@
 		19EF74111D6E65E700D7BB37 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		19EF74491D6E7D4E00D7BB37 /* firstScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstScreen.h; path = HaematologyApp/firstScreen.h; sourceTree = "<group>"; };
 		19EF744A1D6E7D4E00D7BB37 /* firstScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstScreen.m; path = HaematologyApp/firstScreen.m; sourceTree = "<group>"; };
+		19EF744C1D6ECA3800D7BB37 /* customCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = customCell.xib; path = ../customCell.xib; sourceTree = "<group>"; };
+		19EF744E1D6ECB9300D7BB37 /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
+		19EF744F1D6ECB9300D7BB37 /* customCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCell.m; sourceTree = "<group>"; };
+		19EF74541D6ED4A700D7BB37 /* cellTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellTest.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,7 @@
 				19EBC4641D688CC7003C7C43 /* AppDelegate.h */,
 				19EBC4651D688CC8003C7C43 /* AppDelegate.m */,
 				19EBC46D1D688CC8003C7C43 /* Main.storyboard */,
+				19EF744C1D6ECA3800D7BB37 /* customCell.xib */,
 				19EBC4701D688CC8003C7C43 /* Assets.xcassets */,
 				19EBC4721D688CC8003C7C43 /* LaunchScreen.storyboard */,
 				19EBC4751D688CC8003C7C43 /* Info.plist */,
@@ -136,6 +144,8 @@
 		19EBC47E1D688E9C003C7C43 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				19EF744E1D6ECB9300D7BB37 /* customCell.h */,
+				19EF744F1D6ECB9300D7BB37 /* customCell.m */,
 				19EF74491D6E7D4E00D7BB37 /* firstScreen.h */,
 				19EF744A1D6E7D4E00D7BB37 /* firstScreen.m */,
 				19EBC47B1D688E73003C7C43 /* redCellsViewController.h */,
@@ -155,6 +165,7 @@
 		19EBC4881D689391003C7C43 /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				19EF74541D6ED4A700D7BB37 /* cellTest.png */,
 			);
 			name = Art;
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 				19EF74301D6E65E700D7BB37 /* Exo2-MediumItalic.ttf in Resources */,
 				19EF74321D6E65E700D7BB37 /* Exo2-SemiBold.ttf in Resources */,
 				19EF742A1D6E65E700D7BB37 /* Exo2-ExtraLight.ttf in Resources */,
+				19EF74551D6ED4A700D7BB37 /* cellTest.png in Resources */,
 				19EF74251D6E65E700D7BB37 /* Exo2-BlackItalic.ttf in Resources */,
 				19EF74351D6E65E700D7BB37 /* Exo2-ThinItalic.ttf in Resources */,
 				19EF74261D6E65E700D7BB37 /* Exo2-Bold.ttf in Resources */,
@@ -266,6 +278,7 @@
 				19EF74361D6E65E700D7BB37 /* OFL.txt in Resources */,
 				19EF742D1D6E65E700D7BB37 /* Exo2-Light.ttf in Resources */,
 				19EF742E1D6E65E700D7BB37 /* Exo2-LightItalic.ttf in Resources */,
+				19EF744D1D6ECA3800D7BB37 /* customCell.xib in Resources */,
 				19EF742C1D6E65E700D7BB37 /* Exo2-Italic.ttf in Resources */,
 				19EF74281D6E65E700D7BB37 /* Exo2-ExtraBold.ttf in Resources */,
 				19EF74341D6E65E700D7BB37 /* Exo2-Thin.ttf in Resources */,
@@ -286,6 +299,7 @@
 				19EF744B1D6E7D4E00D7BB37 /* firstScreen.m in Sources */,
 				19EBC4811D688EB8003C7C43 /* whiteCellsViewController.m in Sources */,
 				19EBC4841D688ED3003C7C43 /* malariaViewController.m in Sources */,
+				19EF74501D6ECB9300D7BB37 /* customCell.m in Sources */,
 				19EBC48B1D689520003C7C43 /* newsViewController.m in Sources */,
 				19EBC47D1D688E73003C7C43 /* redCellsViewController.m in Sources */,
 				19EBC4661D688CC8003C7C43 /* AppDelegate.m in Sources */,

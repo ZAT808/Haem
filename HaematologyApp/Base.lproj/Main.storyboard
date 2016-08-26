@@ -253,22 +253,22 @@ The process of examination of the blood film is described, along with how a bloo
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-CW-6rs">
-                                <rect key="frame" x="0.0" y="28" width="600" height="523"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oPT-CF-uAC">
                                 <rect key="frame" x="282" y="271" width="37" height="37"/>
                                 <color key="color" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-CW-6rs">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yhi-CW-6rs" firstAttribute="bottom" secondItem="fNg-Cp-agt" secondAttribute="top" id="2IK-Kn-EPq"/>
-                            <constraint firstItem="yhi-CW-6rs" firstAttribute="top" secondItem="01C-EJ-OOq" secondAttribute="bottom" constant="8" symbolic="YES" id="3RI-y1-51R"/>
+                            <constraint firstItem="yhi-CW-6rs" firstAttribute="top" secondItem="01C-EJ-OOq" secondAttribute="bottom" id="3RI-y1-51R"/>
                             <constraint firstItem="yhi-CW-6rs" firstAttribute="leading" secondItem="jC4-mn-qzl" secondAttribute="leading" id="4Tn-5N-4el"/>
                             <constraint firstAttribute="trailing" secondItem="yhi-CW-6rs" secondAttribute="trailing" id="BV6-qn-7rv"/>
-                            <constraint firstItem="oPT-CF-uAC" firstAttribute="centerY" secondItem="yhi-CW-6rs" secondAttribute="centerY" id="V5k-tD-f4Z"/>
+                            <constraint firstItem="oPT-CF-uAC" firstAttribute="centerY" secondItem="yhi-CW-6rs" secondAttribute="centerY" constant="4" id="V5k-tD-f4Z"/>
                             <constraint firstItem="oPT-CF-uAC" firstAttribute="centerX" secondItem="yhi-CW-6rs" secondAttribute="centerX" id="cKY-go-IEN"/>
                         </constraints>
                     </view>
