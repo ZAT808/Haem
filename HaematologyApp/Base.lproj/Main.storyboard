@@ -35,10 +35,10 @@
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R7t-od-EBM">
-                                <rect key="frame" x="10" y="80" width="580" height="173"/>
+                                <rect key="frame" x="10" y="80" width="580" height="443"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="173" id="Qf4-C4-XaG"/>
+                                    <constraint firstAttribute="height" constant="443" id="Qf4-C4-XaG"/>
                                 </constraints>
                                 <string key="text">Welcome to the Peripheral Blood Gallery, a collaboration between Manchester Metropolitan University, The World Health Organization and the United Kingdom National External Quality Assessment Scheme for General Haematology (UKNEQAS (H))
 
@@ -118,7 +118,7 @@ The process of examination of the blood film is described, along with how a bloo
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-GU-gSa">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-GU-gSa">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-5q-un1">
@@ -162,7 +162,7 @@ The process of examination of the blood film is described, along with how a bloo
                             <constraint firstItem="5vY-iw-vmV" firstAttribute="top" secondItem="IqI-zG-jNL" secondAttribute="bottom" id="o2D-xU-Zqz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Red Cells" image="red" id="1ga-7C-oxd"/>
+                    <tabBarItem key="tabBarItem" title="Red Cells" image="redCellIcon" id="1ga-7C-oxd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxx-wj-M2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,7 +197,7 @@ The process of examination of the blood film is described, along with how a bloo
                             <constraint firstItem="zi0-7j-gfs" firstAttribute="top" secondItem="gLR-AG-VZw" secondAttribute="bottom" id="UFX-cz-1aB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="White cells" image="red" id="sPQ-T4-beW"/>
+                    <tabBarItem key="tabBarItem" title="White cells" image="whiteCellIcon" id="sPQ-T4-beW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVO-Xq-phu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,7 +216,7 @@ The process of examination of the blood film is described, along with how a bloo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Malaria" image="mosquito" id="Yhm-Me-Ozb"/>
+                    <tabBarItem key="tabBarItem" title="Malaria" image="malariaCell" id="Yhm-Me-Ozb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9f5-iV-wI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,7 +235,7 @@ The process of examination of the blood film is described, along with how a bloo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Platelets" image="red" id="wTz-se-5ER"/>
+                    <tabBarItem key="tabBarItem" title="Platelets" image="plateletCell" id="wTz-se-5ER"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGm-3t-c4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,22 +257,38 @@ The process of examination of the blood film is described, along with how a bloo
                                 <rect key="frame" x="282" y="271" width="37" height="37"/>
                                 <color key="color" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-CW-6rs">
-                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-CW-6rs">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTo-zv-fbh">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Exo2-ExtraBold" family="Exo 2" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Latest news" id="zfq-AS-40h"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yhi-CW-6rs" firstAttribute="bottom" secondItem="fNg-Cp-agt" secondAttribute="top" id="2IK-Kn-EPq"/>
-                            <constraint firstItem="yhi-CW-6rs" firstAttribute="top" secondItem="01C-EJ-OOq" secondAttribute="bottom" id="3RI-y1-51R"/>
+                            <constraint firstItem="yhi-CW-6rs" firstAttribute="top" secondItem="01C-EJ-OOq" secondAttribute="bottom" constant="44" id="3RI-y1-51R"/>
                             <constraint firstItem="yhi-CW-6rs" firstAttribute="leading" secondItem="jC4-mn-qzl" secondAttribute="leading" id="4Tn-5N-4el"/>
                             <constraint firstAttribute="trailing" secondItem="yhi-CW-6rs" secondAttribute="trailing" id="BV6-qn-7rv"/>
-                            <constraint firstItem="oPT-CF-uAC" firstAttribute="centerY" secondItem="yhi-CW-6rs" secondAttribute="centerY" constant="4" id="V5k-tD-f4Z"/>
+                            <constraint firstItem="uTo-zv-fbh" firstAttribute="centerX" secondItem="jC4-mn-qzl" secondAttribute="centerX" id="GmG-95-G6T"/>
+                            <constraint firstItem="uTo-zv-fbh" firstAttribute="top" secondItem="01C-EJ-OOq" secondAttribute="bottom" id="MeQ-Ni-ftR"/>
+                            <constraint firstItem="uTo-zv-fbh" firstAttribute="leading" secondItem="yhi-CW-6rs" secondAttribute="leading" id="Saf-y9-etM"/>
+                            <constraint firstItem="oPT-CF-uAC" firstAttribute="centerY" secondItem="yhi-CW-6rs" secondAttribute="centerY" constant="-18" id="V5k-tD-f4Z"/>
                             <constraint firstItem="oPT-CF-uAC" firstAttribute="centerX" secondItem="yhi-CW-6rs" secondAttribute="centerX" id="cKY-go-IEN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" image="news" id="LZG-wg-SSS"/>
+                    <tabBarItem key="tabBarItem" title="News" image="newsIcon" id="LZG-wg-SSS"/>
                     <connections>
                         <outlet property="activityIndicator" destination="oPT-CF-uAC" id="L6e-gc-1Mn"/>
                         <outlet property="newsWebView" destination="yhi-CW-6rs" id="D4F-SL-50Q"/>
@@ -285,8 +301,10 @@ The process of examination of the blood film is described, along with how a bloo
     </scenes>
     <resources>
         <image name="bloodBackground" width="320" height="640"/>
-        <image name="mosquito" width="25" height="25"/>
-        <image name="news" width="25" height="22"/>
-        <image name="red" width="25" height="25"/>
+        <image name="malariaCell" width="30" height="30"/>
+        <image name="newsIcon" width="30" height="30"/>
+        <image name="plateletCell" width="30" height="30"/>
+        <image name="redCellIcon" width="30" height="30"/>
+        <image name="whiteCellIcon" width="30" height="30"/>
     </resources>
 </document>

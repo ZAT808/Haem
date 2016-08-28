@@ -5,6 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Exo2-LightItalic.ttf">
+            <string>Exo2-LightItalic</string>
+        </mutableArray>
         <mutableArray key="Exo2-Regular.ttf">
             <string>Exo2-Regular</string>
         </mutableArray>
@@ -28,9 +31,16 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOV-eN-QZV">
+                        <rect key="frame" x="76" y="37" width="236" height="32"/>
+                        <fontDescription key="fontDescription" name="Exo2-LightItalic" family="Exo 2" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="descript" destination="fOV-eN-QZV" id="Ppr-7d-5hR"/>
                 <outlet property="nameLabel" destination="OCy-UZ-y3Z" id="Gqx-oB-mo3"/>
                 <outlet property="thumbnailImageView" destination="FJV-Z1-TaA" id="jrz-PA-VW9"/>
             </connections>

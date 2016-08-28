@@ -16,24 +16,29 @@
 @implementation redCellsViewController
 {
     NSArray *tableData;
+    NSArray *shortDesc;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.498 green:0.0 blue:0.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
                                                            NSFontAttributeName: [UIFont fontWithName:@"Exo2-ExtraBold" size:18.0f],
                                                            NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTranslucent:NO];
     [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.498 green:0.0 blue:0.0 alpha:1.0
                                             ]];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Exo2-ExtraBold" size:12.0f]} forState:UIControlStateNormal];
         // Do any additional setup after loading the view.
     
     tableData = [NSArray arrayWithObjects:@"Acanthocyte", @"Anisocytosis", @"Basophilic stippling", @"Echinocytes", @"Elliptocytes", @"Hemi-ghost cells", @"Howell-Jolly bodies", @"Hypochromasia", @"Keratocytes", @"Macrocytes", @"Microcytes", nil];
+    
+    shortDesc = [NSArray arrayWithObjects:@"Spiked membrane", @"Unequal size", @"Dots at the periphery", @"Evenly spaced thorny projections", @"Oval or elongated", @"Irregularly contracted cells", @"A purple spot on an erythrocyte", @"Increase in central pallor", @"Irregular shape due to passage through damaged blood vessels", @"Larger then normal", @"Smaller than normal", nil];
     
    
 }
@@ -70,9 +75,15 @@
     cell.separatorInset = UIEdgeInsetsZero;
     cell.preservesSuperviewLayoutMargins = false;
     cell.backgroundColor = [UIColor clearColor];
+    
     cell.thumbnailImageView.image = [UIImage imageNamed:@"cellTest.png"];
+    
     cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
-    //cell.nameLabel.font = [UIFont fontWithName:@"Exo2-Regular" size:14.0f];
+    
+    cell.descript.text = [shortDesc objectAtIndex:indexPath.row];
+    cell.descript.numberOfLines = 0;
+    cell.descript.lineBreakMode = NSLineBreakByWordWrapping;
+
     return cell;
 }
 //=====================================================================================================
